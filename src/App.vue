@@ -23,7 +23,7 @@ export default {
 </script>
 <style scoped>
 #navbar {
-  background-color: #EDD3B8
+  background-color: #639D6A
 }
 </style>
 
