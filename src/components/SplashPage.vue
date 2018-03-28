@@ -16,9 +16,15 @@
   margin: auto;
 }
 .logo {
-  margin: 20vh;
+  margin: 20vh 20vh 0px 20vh;
 }
 h1, h2 {
+  background-color: #A97C54;
+  color: #3F4040;
+  width: 100vw;
+  height: 38vh;
+  padding-top: 10%; 
+  text-align: center;
   font-weight: normal;
   font-family: 'Lato', sans-serif;
   font-size: 5rem;

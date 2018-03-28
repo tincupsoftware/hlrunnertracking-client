@@ -10,11 +10,11 @@
       <v-btn flat>Aid Station Input</v-btn>
     </v-toolbar-items>
   </v-toolbar>
-    <v-content>
+    <v-content style="min-height: calc(100vh-32px);">
       <router-view/>
     </v-content>
-      <v-footer id="footer" :fixed="fixed" app>
-      <span id="copyright">&copy; 2018 GROUP NAME GOES HERE</span>
+    <v-footer id="footer" :fixed="fixed" app>
+      <span id="copyright">&copy; 2018 Tin Cup Software</span>
       <span><ul class="linkwrapper">
         </ul>
         </span>
@@ -34,7 +34,7 @@ export default {
 </script>
 <style scoped>
 #navbar {
-  background-color: #639D6A
+  background-color: #639D6A;
 }
 <style scoped>
 #router {
@@ -42,9 +42,11 @@ export default {
   width: 100vw;
 }
 #footer {
+  position: relative;
+  padding: 40px 10px;
   display: flex;
   justify-content: space-between;
-  background-color: #639D6A
+  background-color: #639D6A;
 }
 #copyright {
   margin-left: 2vw;
