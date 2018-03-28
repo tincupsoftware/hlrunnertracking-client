@@ -5,7 +5,7 @@
     <v-toolbar-title>High Lonesome 100 Administration Portal</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
-      <v-btn flat>Runner Checkin</v-btn>
+      <v-btn flat :to="{name: 'RunnerCheckIn'}">Runner Checkin</v-btn>
       <v-btn flat>Runner List</v-btn>
       <v-btn flat>Aid Station Input</v-btn>
     </v-toolbar-items>
@@ -27,11 +27,26 @@ export default {
   name: 'App',
   data () {
     return {
-      fixed: false
+      fixed: false,
+      apiUrl: 'https://hl100-runnertracking.herokuapp.com/runners',
+      runners: []
+    }
+  },
+  mounted () {
+    this.getDataFromDatabase()
+  },
+  methods: {
+    getDataFromDatabase () {
+      fetch(this.apiUrl)
+        .then(response => response.json())
+        .then(response => {
+          this.runners = response
+        })
     }
   }
 }
 </script>
+
 <style scoped>
 #navbar {
   background-color: #639D6A
@@ -55,6 +70,5 @@ export default {
 .links {
   display: inline;
 }
-</style>
 </style>
 

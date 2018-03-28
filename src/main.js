@@ -28,6 +28,7 @@ import '../node_modules/vuetify/src/stylus/app.styl'
 
 Vue.use(Vuetify, {
   components: {
+    Vuetify,
     VApp,
     VNavigationDrawer,
     VFooter,
@@ -36,7 +37,16 @@ Vue.use(Vuetify, {
     VIcon,
     VGrid,
     VToolbar,
-    transitions
+    transitions,
+    VForm,
+    VTextField,
+    VSelect,
+    VCheckbox,
+    VSwitch,
+    VDialog,
+    VCard,
+    VSubheader,
+    VDivider
   },
   theme: {
     primary: '#A97C54',
@@ -45,7 +55,8 @@ Vue.use(Vuetify, {
     error: '#FF5252',
     info: '#2196F3',
     success: '#4CAF50',
-    warning: '#FFC107'
+    warning: '#FFC107',
+    $grey: '#FFF'
   }
 })
 

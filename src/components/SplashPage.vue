@@ -11,8 +11,6 @@
 <style scoped>
 .landingpage {
   background-color: #3F4040;
-  width: 100vw;
-  height: 100vh;
   margin: auto;
 }
 .logo {
