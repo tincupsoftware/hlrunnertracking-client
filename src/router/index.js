@@ -3,7 +3,7 @@ import Router from 'vue-router';
 import SplashPage from '@/components/SplashPage';
 import RunnerCheckIn from '@/components/RunnerCheckIn';
 import Access from '@/components/Access';
-import Roster from '@/components/Roster';
+import RunnerList from '@/components/RunnerList';
 import Trail from '@/components/Trail';
 import AidStation from '@/components/AidStation';
 
@@ -28,9 +28,9 @@ export default new Router({
       component: Access,
     },
     {
-      path: '/roster',
-      name: 'Roster',
-      component: Roster,
+      path: '/runnerlist',
+      name: 'Runner List',
+      component: RunnerList,
     },
     {
       path: '/trail',
