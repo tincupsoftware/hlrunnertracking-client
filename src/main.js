@@ -56,7 +56,11 @@ Vue.use(Vuetify, {
     info: '#2196F3',
     success: '#4CAF50',
     warning: '#FFC107',
-    $grey: '#FFF'
+    $grey: '#FFF',
+    blue: '#5B6789',
+    green: '#639D6A',
+    taupe: '#CBA37F',
+    darkText: '#303131'
   }
 })
 

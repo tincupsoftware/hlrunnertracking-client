@@ -1,6 +1,6 @@
 <template>
-<v-app>
-  <v-toolbar id="navbar">
+<v-app class="app primary">
+  <!-- <v-toolbar id="navbar">
     <v-toolbar-side-icon></v-toolbar-side-icon>
     <v-toolbar-title>High Lonesome 100 Administration Portal</v-toolbar-title>
     <v-spacer></v-spacer>
@@ -18,7 +18,11 @@
     <span><ul class="linkwrapper">
         </ul>
         </span>
-  </v-footer>
+  </v-footer> -->
+<!-- style="min-height: calc(100vh-32px);" -->
+  <v-content>
+    <router-view/>
+  </v-content>
 </v-app>
 </template>
 
@@ -40,6 +44,7 @@ export default {
       fetch(this.apiUrl)
         .then(response => response.json())
         .then(response => {
+          // console.log(response)
           this.runners = response
         })
     }
@@ -47,8 +52,9 @@ export default {
 }
 </script>
 
-<style scoped>
-#navbar {
+<style>
+
+/* #navbar {
   background-color: #639D6A;
 }
 
@@ -75,5 +81,5 @@ export default {
 
 .links {
   display: inline;
-}
+} */
 </style>
