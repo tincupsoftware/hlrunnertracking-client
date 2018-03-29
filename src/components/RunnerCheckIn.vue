@@ -72,9 +72,7 @@ export default {
     medicalCondition: '',
     medication: '',
     sex: [],
-    size: [],
-    radios: 'Men\'s',
-    row: null
+    size: []
   }),
   methods: {
     addNewRunner () {
