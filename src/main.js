@@ -22,7 +22,8 @@ import {
   VDialog,
   VCard,
   VSubheader,
-  VDivider
+  VDivider,
+  VRadioGroup
 } from 'vuetify'
 import '../node_modules/vuetify/src/stylus/app.styl'
 
@@ -46,7 +47,8 @@ Vue.use(Vuetify, {
     VDialog,
     VCard,
     VSubheader,
-    VDivider
+    VDivider,
+    VRadioGroup
   },
   theme: {
     primary: '#A97C54',
