@@ -1,6 +1,6 @@
 <template>
     <v-container class="access access-page">
-      <v-layout column align-center class="logo">
+      <v-layout column align-center class="access-wrap">
         <h1><span>{{title_span1}}</span> {{title}} <span>{{title_span2}}</span></h1>
         <div class="text-xs-center tri-links">
           <router-link class="nav-link" :to="{ name: 'Roster'}">
@@ -58,6 +58,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.content {
+  width: 100%;
+  height: 100%;
+}
 .access-page {
   height: 700px;
 }
@@ -66,7 +70,9 @@ span {
   font-weight: 400;
 }
 .tri-links {
+    display: flex;
   margin-top: 100px;
+  flex-direction: column;
 }
 .tri-links button {
   margin-bottom: 30px;

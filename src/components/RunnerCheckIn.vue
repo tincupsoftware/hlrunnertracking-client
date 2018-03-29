@@ -18,6 +18,7 @@
   </div>
 </div>
 </template>
+
 <script>
 export default {
   name: 'RunnerCheckIn',
@@ -76,6 +77,7 @@ export default {
   }
 }
 </script>
+
 <style scoped>
 #runnercheckinwrapper {
   display: flex;

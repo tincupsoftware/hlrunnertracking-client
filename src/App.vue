@@ -1,37 +1,22 @@
 <template>
-<v-app class="app primary">
-  <!-- <v-toolbar id="navbar">
-    <v-toolbar-side-icon></v-toolbar-side-icon>
-    <v-toolbar-title>High Lonesome 100 Administration Portal</v-toolbar-title>
-    <v-spacer></v-spacer>
-    <v-toolbar-items class="hidden-sm-and-down">
-      <v-btn flat :to="{name: 'RunnerCheckIn'}">Runner Checkin</v-btn>
-      <v-btn flat>Runner List</v-btn>
-      <v-btn flat>Aid Station Input</v-btn>
-    </v-toolbar-items>
-  </v-toolbar>
-  <v-content style="min-height: calc(100vh-32px);">
-    <router-view/>
-  </v-content>
-  <v-footer id="footer" :fixed="fixed" app>
-    <span id="copyright">&copy; 2018 Tin Cup Software</span>
-    <span><ul class="linkwrapper">
-        </ul>
-        </span>
-  </v-footer> -->
-<!-- style="min-height: calc(100vh-32px);" -->
-  <v-content>
-    <router-view/>
-  </v-content>
-</v-app>
+  <v-app class="app">
+    <v-content>
+      <router-view/>
+    </v-content>
+    <Footer />
+  </v-app>
 </template>
 
 <script>
+import Footer from '@/components/Footer'
+
 export default {
   name: 'App',
+  components: {
+    Footer
+  },
   data () {
     return {
-      fixed: false,
       apiUrl: 'https://hl100-runnertracking.herokuapp.com/runners',
       runners: []
     }
@@ -53,33 +38,16 @@ export default {
 </script>
 
 <style>
-
-/* #navbar {
-  background-color: #639D6A;
-}
-
-<style scoped>#router {
-  height: 100vh;
-  width: 100vw;
-}
-
-#footer {
-  position: relative;
-  padding: 40px 10px;
-  display: flex;
-  justify-content: space-between;
-  background-color: #639D6A;
-}
-
-#copyright {
-  margin-left: 2vw;
-}
-
-.linkwrapper {
-  margin-right: 2vw;
-}
-
-.links {
-  display: inline;
+/* body {
+  margin: 0 auto;
+  background-color: black;
 } */
+div#app {
+  background-color: #A97C54;
+}
+.content {
+  margin: auto;
+  height: 100%;
+}
+
 </style>
