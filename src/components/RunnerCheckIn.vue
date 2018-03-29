@@ -10,25 +10,38 @@
       label="Name"
       v-model="name"
     ></v-text-field>
-    <v-text-field
-      label="Shirt Size"
-      v-model="shirtSize"
-    ></v-text-field>
+     <v-container fluid>
+       <h4>Shirt Size</h4>
+       <v-radio-group v-model="sex" row>
+      <v-radio label="Men's" value="Men's" ></v-radio>
+      <v-radio label="Women's" value="Women's"></v-radio>
+    </v-radio-group>
+           <v-radio-group v-model="size" row>
+      <v-radio label="XS" value="X-Small" ></v-radio>
+       <v-radio label="S" value="Small" ></v-radio>
+        <v-radio label="M" value="Medium" ></v-radio>
+         <v-radio label="L" value="Large" ></v-radio>
+          <v-radio label="XL" value="X-Large" ></v-radio>
+    </v-radio-group>
+  </v-container>
     <v-text-field
       label="Location Staying"
       v-model="locationStaying"
     ></v-text-field>
+      <v-switch label="Shoe Bath" v-model="shoeBath" value="Yes"></v-switch>
      <v-text-field
-      label="Shoe Bath"
+      label="Shoe Bath Notes"
       v-model="shoeBath"
     ></v-text-field>
         <v-text-field
       label="Medical Conditions"
       v-model="medicalCondition"
+      placeholder="None"
     ></v-text-field>
     <v-text-field
       label="Current Medications"
       v-model="medication"
+      placeholder="None"
     ></v-text-field>
     <v-btn
       @click="addNewRunner"
@@ -50,14 +63,16 @@ export default {
     valid: true,
     checkbox: false,
     submissionText: '',
-           id: 0,
-          bibNumber: 0,
-          name: '',
-          shirtSize: '',
-          locationStaying: '',
-          shoeBath: '',
-          medicalCondition: '',
-          medication: '',
+    id: 0,
+    bibNumber: 0,
+    name: '',
+    shirtSize: '',
+    locationStaying: '',
+    shoeBath: '',
+    medicalCondition: '',
+    medication: '',
+    sex: [],
+    size: []
   }),
   methods: {
     addNewRunner () {
@@ -69,7 +84,7 @@ export default {
         body: JSON.stringify({
           bibNumber: this.bibNumber,
           name: this.name,
-          shirtSize: this.shirtSize,
+          shirtSize: `${this.sex} ${this.size}`,
           locationStaying: this.locationStaying,
           shoeBath: this.shoeBath,
           medicalCondition: this.medicalCondition,
@@ -103,13 +118,15 @@ export default {
 #runnercheckinwrapper {
   display: flex;
   justify-content: center;
+    background-color: #3F4040
 }
 #runnercheckin {
   align-self: center;
-  margin: 10vh auto auto auto;
-  padding: 10vh;
+  margin: 2vh;
+  padding: 2vh;
   align-self: center;
   width: 60vw;
+  background-color: white;
 }
 #runnercheckinform {
   justify-content: space-around;

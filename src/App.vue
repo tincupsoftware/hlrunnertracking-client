@@ -1,6 +1,6 @@
 <template>
   <v-app>
- <v-toolbar id="navbar">
+    <v-toolbar id="navbar">
     <v-toolbar-side-icon></v-toolbar-side-icon>
     <v-toolbar-title>High Lonesome 100 Administration Portal</v-toolbar-title>
     <v-spacer></v-spacer>
@@ -10,10 +10,10 @@
       <v-btn flat>Aid Station Input</v-btn>
     </v-toolbar-items>
   </v-toolbar>
-    <v-content style="min-height: calc(100vh-32px);">
+    <v-content style="min-height: calc(100vh-32px);" id="content">
       <router-view/>
     </v-content>
-    <v-footer id="footer" :fixed="fixed" app>
+    <v-footer id="footer" :fixed="fixed">
       <span id="copyright">&copy; 2018 Tin Cup Software</span>
       <span><ul class="linkwrapper">
         </ul>
@@ -50,16 +50,17 @@ export default {
 <style scoped>
 #navbar {
   background-color: #639D6A;
+  heigh: 10vh;
 }
-<style scoped>
-#router {
-  height: 100vh;
+#content {
+  height: 80vh;
   width: 100vw;
 }
 #footer {
   position: relative;
   padding: 40px 10px;
   display: flex;
+  height: 10vh;
   justify-content: space-between;
   background-color: #639D6A;
 }
