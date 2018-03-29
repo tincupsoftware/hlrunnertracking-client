@@ -30,7 +30,7 @@ export default new Router({
     {
       path: '/runnerlist',
       name: 'Runner List',
-      component: RunnerList,
+      component: RunnerList
     },
     {
       path: '/trail',
