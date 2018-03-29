@@ -1,13 +1,14 @@
 describe('hl100 runner tracking', function () {
     it('shows correct content', function () {
-        cy.visit('https://highlonesome100runnertracking.firebaseapp.com/');
+        cy.visit('https://highlonesome100runnertracking.firebaseapp.com/#');
 
         cy.get('div.toolbar__title').should('have.text', 'High Lonesome 100 Administration Portal');
 
-        cy.get('.hidden-sm-and-down').find('btn').should('have.length', 3);
+        cy.get('.hidden-sm-and-down').find('div.btn__content').should('have.length', 3);
 
         cy
-            .get('div.btn__content')
+            .get('.hidden-sm-and-down')
+            .find('div.btn__content')
             .eq(0)
             .click()
             .url()
@@ -19,7 +20,10 @@ describe('hl100 runner tracking', function () {
             .get('div.container.fluid')
             .find('div.input-group.input-group--dirty.radio-group.radio-group--row')
             .eq(0)
-            .find('[aria-label="Women/s"]')
+            .find('div.input-group__input')
+            .eq(0)
+            .find('div.input-group.input-group--selection-controls.radio.accent--text')
+            .eq(1)
             .find('div.input-group--selection-controls__ripple')
             .click();
         cy
