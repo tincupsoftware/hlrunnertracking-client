@@ -25,7 +25,7 @@
     <div class="text-xs-center roster-link">
       <router-link class="nav-link-roster" :to="{ name: 'Access'}">
         <v-btn round color="secondary" class="btn-roster" large dark>
-          RETURN
+          Back
         </v-btn>
       </router-link>
       <router-link class="nav-link-roster" :to="{ name: 'RunnerCheckIn'}">
