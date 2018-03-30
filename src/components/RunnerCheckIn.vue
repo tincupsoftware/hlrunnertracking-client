@@ -3,19 +3,57 @@
   <div id="runnercheckin">
     <h1>Add Runner to Roster</h1>
     <v-form id="runnercheckinform" v-model="valid" ref="form" lazy-validation>
-      <v-text-field label="Bib #" v-model="bibNumber"></v-text-field>
-      <v-text-field label="Name" v-model="name"></v-text-field>
-      <v-text-field label="Shirt Size" v-model="shirtSize"></v-text-field>
-      <v-text-field label="Location Staying" v-model="locationStaying"></v-text-field>
-      <v-text-field label="Shoe Bath" v-model="shoeBath"></v-text-field>
-      <v-text-field label="Medical Conditions" v-model="medicalCondition"></v-text-field>
-      <v-text-field label="Current Medications" v-model="medication"></v-text-field>
-      <v-btn @click="addNewRunner" :disabled="!valid">
-        submit
-      </v-btn>
-      <v-btn @click="clear">clear</v-btn>
-    </v-form>
-    <p id="submissionconfirmation" v-model="submissionText">{{submissionText}}</p>
+    <v-text-field
+      label="Bib #"
+      v-model="bibNumber"
+    ></v-text-field>
+    <v-text-field
+      label="Name"
+      v-model="name"
+    ></v-text-field>
+     <v-container fluid>
+       <h4>Shirt Size</h4>
+       <v-radio-group v-model="sex" row>
+      <v-radio label="Men's" value="Men's" ></v-radio>
+      <v-radio label="Women's" value="Women's"></v-radio>
+    </v-radio-group>
+           <v-radio-group v-model="size" row>
+      <v-radio label="XS" value="X-Small" ></v-radio>
+       <v-radio label="S" value="Small" ></v-radio>
+        <v-radio label="M" value="Medium" ></v-radio>
+         <v-radio label="L" value="Large" ></v-radio>
+          <v-radio label="XL" value="X-Large" ></v-radio>
+    </v-radio-group>
+  </v-container>
+    <v-text-field
+      label="Location Staying"
+      v-model="locationStaying"
+    ></v-text-field>
+      <v-switch label="Shoe Bath" v-model="shoeBath" value="Yes"></v-switch>
+     <v-text-field
+      label="Shoe Bath Notes"
+      v-model="shoeBath"
+    ></v-text-field>
+        <v-text-field
+      label="Medical Conditions"
+      v-model="medicalCondition"
+      placeholder="None"
+    ></v-text-field>
+    <v-text-field
+      label="Current Medications"
+      v-model="medication"
+      placeholder="None"
+    ></v-text-field>
+    <v-btn
+      @click="addNewRunner"
+      :disabled="!valid"
+    >
+      submit
+    </v-btn>
+    <v-btn @click="clear">clear</v-btn>
+  </v-form>
+  <p id="submissionconfirmation" v-model="submissionText">{{submissionText}}</p>
+  </div>
   </div>
 </div>
 </template>
@@ -36,6 +74,8 @@ export default {
     shoeBath: '',
     medicalCondition: '',
     medication: ''
+    sex: [],
+    size: []
   }),
   methods: {
     addNewRunner () {
@@ -47,7 +87,7 @@ export default {
         body: JSON.stringify({
           bibNumber: this.bibNumber,
           name: this.name,
-          shirtSize: this.shirtSize,
+          shirtSize: `${this.sex} ${this.size}`,
           locationStaying: this.locationStaying,
           shoeBath: this.shoeBath,
           medicalCondition: this.medicalCondition,
@@ -89,7 +129,6 @@ h1 {
   padding: 5% 10%;
   color: white;
   background-color: #CBA37F;
-  /* background-color: #F6D7BD; */
 }
 
 #runnercheckinwrapper {
@@ -98,8 +137,8 @@ h1 {
 }
 
 #runnercheckin {
-  align-self: center;
   width: 80vw;
+  align-self: center;
 }
 
 #runnercheckinform {

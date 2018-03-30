@@ -1,5 +1,4 @@
 <template>
-  <!-- <div class="access"> -->
     <v-container class="aid-station">
       <v-layout column align-center class="logo">
         <h1><span>{{title_span1}}</span> {{title}} <span>{{title_span2}}</span></h1>
@@ -15,8 +14,6 @@
         </div>
       </v-layout>
     </v-container>
-  <!-- </div> -->
-
 </template>
 
 <script>
@@ -28,24 +25,10 @@ export default {
       title_span1: 'HIGH',
       title_span2: '100'
     }
-  },
-  mounted () {
-    // this.getDataFromDatabase()
-  },
-  methods: {
-    // getDataFromDatabase () {
-    //   fetch(this.apiUrl)
-    //     .then(response => response.json())
-    //     .then(response => {
-    //       // console.log(response)
-    //       this.runners = response
-    //     })
-    // }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 span {
   font-weight: 400;

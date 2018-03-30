@@ -6,8 +6,9 @@ import Access from '@/components/Access'
 import Roster from '@/components/Roster'
 import Trail from '@/components/Trail'
 import AidStation from '@/components/AidStation'
+import RunnerList from '@/components/RunnerList';
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   mode: 'history',
@@ -15,7 +16,7 @@ export default new Router({
     {
       path: '/',
       name: 'SplashPage',
-      component: SplashPage
+      component: SplashPage,
     },
     {
       path: '/runnercheckin',
@@ -33,6 +34,11 @@ export default new Router({
       component: Roster
     },
     {
+      path: '/runnerlist',
+      name: 'RunnerList',
+      component: RunnerList
+    },
+    {
       path: '/trail',
       name: 'Trail',
       component: Trail
@@ -43,4 +49,4 @@ export default new Router({
       component: AidStation
     }
   ]
-})
+});

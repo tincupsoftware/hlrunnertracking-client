@@ -23,6 +23,7 @@ import {
   VCard,
   VSubheader,
   VDivider,
+  VRadioGroup,
   VDataTable
 } from 'vuetify'
 import '../node_modules/vuetify/src/stylus/app.styl'
@@ -48,6 +49,7 @@ Vue.use(Vuetify, {
     VCard,
     VSubheader,
     VDivider,
+    VRadioGroup,
     VDataTable
   },
   theme: {
@@ -58,7 +60,6 @@ Vue.use(Vuetify, {
     info: '#2196F3',
     success: '#4CAF50',
     warning: '#FFC107',
-    $grey: '#FFF',
     blue: '#5B6789',
     green: '#639D6A',
     taupe: '#CBA37F',

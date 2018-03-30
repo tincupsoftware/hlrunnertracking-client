@@ -39,24 +39,10 @@ export default {
       title_span1: 'HIGH',
       title_span2: '100'
     }
-  },
-  mounted () {
-    // this.getDataFromDatabase()
-  },
-  methods: {
-    // getDataFromDatabase () {
-    //   fetch(this.apiUrl)
-    //     .then(response => response.json())
-    //     .then(response => {
-    //       // console.log(response)
-    //       this.runners = response
-    //     })
-    // }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .content {
   width: 100%;
@@ -65,7 +51,6 @@ export default {
 .access-page {
   height: 700px;
 }
-
 span {
   font-weight: 400;
 }
@@ -73,6 +58,7 @@ span {
     display: flex;
   margin-top: 100px;
   flex-direction: column;
+  margin-top: 100px;
 }
 .tri-links button {
   margin-bottom: 30px;
