@@ -71,7 +71,7 @@
 export default {
   name: 'RunnerCheckIn',
   data: () => ({
-    apiUrl: 'https://hl100-runnertracking.herokuapp.com/runners',
+    apiUrl: 'https://hl100-runnertracking.herokuapp.com/api/beta/runners/',
     valid: true,
     checkbox: false,
     submissionText: '',
