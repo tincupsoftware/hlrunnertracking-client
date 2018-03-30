@@ -1,6 +1,7 @@
 <template>
 <div id="runnercheckinwrapper">
   <div id="runnercheckin">
+    <h1>Add Runner to Roster</h1>
     <v-form id="runnercheckinform" v-model="valid" ref="form" lazy-validation>
       <v-text-field label="Bib #" v-model="bibNumber"></v-text-field>
       <v-text-field label="Name" v-model="name"></v-text-field>
@@ -79,6 +80,18 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+#runnercheckinform {
+  margin-top: 5%;
+  padding: 5% 10%;
+  color: white;
+  background-color: #CBA37F;
+  /* background-color: #F6D7BD; */
+}
+
 #runnercheckinwrapper {
   display: flex;
   justify-content: center;
@@ -86,15 +99,12 @@ export default {
 
 #runnercheckin {
   align-self: center;
-  margin: 10vh auto auto auto;
-  padding: 10vh;
-  align-self: center;
-  width: 60vw;
+  width: 80vw;
 }
 
 #runnercheckinform {
   justify-content: space-around;
-  width: 50vw;
+  width: 80vw;
 }
 
 #submissionconfirmation {

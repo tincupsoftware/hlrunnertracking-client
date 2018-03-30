@@ -27,6 +27,18 @@
             </router-link>
           </v-btn>
         </div> -->
+        <div class="text-xs-center trail-link">
+          <router-link class="nav-link-trail" :to="{ name: 'Access'}">
+            <v-btn round color="secondary" class="btn-trail" large dark>
+              RETURN
+            </v-btn>
+          </router-link>
+          <!-- <router-link class="nav-link-trail" :to="{ name: 'RunnerCheckIn'}">
+            <v-btn round color="secondary" class="btn-trail" large dark>
+              add
+            </v-btn>
+          </router-link> -->
+        </div>
       </v-layout>
     </v-container>
   <!-- </div> -->
@@ -71,6 +83,17 @@ span {
 }
 .nav-link {
   color: #303131;
+  text-decoration: none;
+}
+
+.nav-link-trail .btn-trail {
+  color: #A97C54;
+  font-size: 2rem;
+  height: 3rem;
+  width: 10rem;
+  margin-bottom: 25px;
+}
+.nav-link-trail {
   text-decoration: none;
 }
 </style>

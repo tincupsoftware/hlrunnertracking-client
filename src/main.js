@@ -22,7 +22,8 @@ import {
   VDialog,
   VCard,
   VSubheader,
-  VDivider
+  VDivider,
+  VDataTable
 } from 'vuetify'
 import '../node_modules/vuetify/src/stylus/app.styl'
 
@@ -46,7 +47,8 @@ Vue.use(Vuetify, {
     VDialog,
     VCard,
     VSubheader,
-    VDivider
+    VDivider,
+    VDataTable
   },
   theme: {
     primary: '#A97C54',
@@ -60,7 +62,8 @@ Vue.use(Vuetify, {
     blue: '#5B6789',
     green: '#639D6A',
     taupe: '#CBA37F',
-    darkText: '#303131'
+    darkText: '#303131',
+    input: '#F6D7BD'
   }
 })
 
