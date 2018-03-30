@@ -1,15 +1,29 @@
 describe('hl100 runner tracking', function () {
     it('shows correct content', function () {
-        cy.visit('https://highlonesome100runnertracking.firebaseapp.com/#');
+        cy.visit('https://highlonesome100runnertracking.firebaseapp.com');
 
-        cy.get('div.toolbar__title').should('have.text', 'High Lonesome 100 Administration Portal');
-
-        cy.get('.hidden-sm-and-down').find('div.btn__content').should('have.length', 3);
+        cy.get('h1').should('have.text', 'High Lonesome 100');
 
         cy
-            .get('.hidden-sm-and-down')
-            .find('div.btn__content')
+            .get('div.btn__content')
+            .click()
+            .url()
+            .should('contain', '/access');
+
+        cy
+            .get('div.text-xs-center.tri-links')
+            .find('a.nav-link')
             .eq(0)
+            .click()
+            .url()
+            .should('contain', '/roster');
+
+        cy.get('h1').should('contain', 'RUNNERS');
+
+        cy
+            .get('div.text-xs-center.roster-link')
+            .find('a.nav-link-roster')
+            .eq(1)
             .click()
             .url()
             .should('contain', '/runnercheckin');
