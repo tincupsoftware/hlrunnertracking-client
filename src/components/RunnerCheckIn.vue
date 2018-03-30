@@ -130,22 +130,18 @@ h1 {
   color: white;
   background-color: #CBA37F;
 }
-
 #runnercheckinwrapper {
   display: flex;
   justify-content: center;
 }
-
 #runnercheckin {
   width: 80vw;
   align-self: center;
 }
-
 #runnercheckinform {
   justify-content: space-around;
   width: 80vw;
 }
-
 #submissionconfirmation {
   margin: 1vh;
   font-family: 'Roboto', sans-serif;

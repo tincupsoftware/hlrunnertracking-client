@@ -47,7 +47,6 @@
       <td class="text-xs-center">{{ props.item.RasberryTwoOut}}</td>
       <td class="text-xs-center">{{ props.item.RasberryTwoPacerIn}}</td>
       <td class="text-xs-center">{{ props.item.RasberryTwoPacerOut}}</td>
-
     </template>
   </v-data-table>
 </template>
