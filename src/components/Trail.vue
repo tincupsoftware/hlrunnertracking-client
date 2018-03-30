@@ -12,7 +12,9 @@
         </div>
       </v-layout>
     </v-container>
-    <RunnerList id="runnerlist"/>
+    <div id="runnerlist">
+    <RunnerList/>
+    </div>
 </div>
 </template>
 
@@ -34,6 +36,9 @@ export default {
 </script>
 
 <style scoped>
+#runnerlist {
+  margin: 1vw;
+}
 span {
   font-weight: 400;
 }
