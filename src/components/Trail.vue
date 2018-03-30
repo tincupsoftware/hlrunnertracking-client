@@ -1,20 +1,21 @@
 <template>
-<v-container class="trail">
-  <v-layout column align-center class="logo">
-    <h1><span>{{title_span1}}</span> {{title}} <span>{{title_span2}}</span></h1>
-    <div class="text-xs-center trail-link">
-      <router-link class="nav-link-trail" :to="{ name: 'Access'}">
-        <v-btn round color="secondary" class="btn-trail" large dark>
-          BACK
-        </v-btn>
-      </router-link>
-      <v-btn round color="secondary" class="btn-trail" large dark>
-        add
-      </v-btn>
-    </div>
+<div>
+    <v-container class="trail">
+      <v-layout column align-center class="logo">
+        <h1><span>{{title_span1}}</span> {{title}} <span>{{title_span2}}</span></h1>
+        <div class="text-xs-center trail-link">
+          <router-link class="nav-link-trail" :to="{ name: 'Access'}">
+            <v-btn round color="secondary" class="btn-trail" large dark>
+              BACK
+            </v-btn>
+          </router-link>
+        </div>
+      </v-layout>
+    </v-container>
+    <div id="runnerlist">
     <RunnerList/>
-  </v-layout>
-</v-container>
+    </div>
+</div>
 </template>
 
 <script>
@@ -35,6 +36,9 @@ export default {
 </script>
 
 <style scoped>
+#runnerlist {
+  margin: 1vw;
+}
 span {
   font-weight: 400;
 }
