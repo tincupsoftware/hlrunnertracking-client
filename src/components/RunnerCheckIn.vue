@@ -56,6 +56,11 @@
         <v-btn @click="clear" round color="secondary" class="btn-roster" large dark>
           Clear
         </v-btn>
+         <router-link class="nav-link-roster" :to="{ name: 'Roster'}">
+        <v-btn round color="secondary" class="btn-roster" large dark>
+          Back
+        </v-btn>
+      </router-link>
     </div>
   </v-form>
   </div>
