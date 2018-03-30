@@ -48,6 +48,10 @@ describe('hl100 runner tracking', function () {
             .find('div.input-group--selection-controls__ripple')
             .click();
         cy.get('[aria-label="Location Staying"]').type('Holiday INN');
-        cy.get('div').contains('submit').click();
+        cy
+            .get('div.text-xs-center.roster-link')
+            .find('button')
+            .eq(0)
+            .click();
     });
 });
