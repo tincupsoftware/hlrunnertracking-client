@@ -34,9 +34,6 @@ export default {
 </script>
 
 <style scoped>
-/* #runnerlist {
-  align-self: auto;
-} */
 span {
   font-weight: 400;
 }
