@@ -12,7 +12,7 @@
         </div>
       </v-layout>
     </v-container>
-    <RunnerList v-scroll:#scroll-target="onScroll" id="runnerlist"/>
+    <RunnerList id="runnerlist"/>
 </div>
 </template>
 
@@ -34,9 +34,9 @@ export default {
 </script>
 
 <style scoped>
-#runnerlist {
+/* #runnerlist {
   align-self: auto;
-}
+} */
 span {
   font-weight: 400;
 }
