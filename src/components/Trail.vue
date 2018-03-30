@@ -1,4 +1,5 @@
 <template>
+<div>
     <v-container class="trail">
       <v-layout column align-center class="logo">
         <h1><span>{{title_span1}}</span> {{title}} <span>{{title_span2}}</span></h1>
@@ -8,13 +9,11 @@
               BACK
             </v-btn>
           </router-link>
-            <v-btn round color="secondary" class="btn-trail" large dark>
-              add
-            </v-btn>
         </div>
-        <RunnerList/>
       </v-layout>
     </v-container>
+    <RunnerList id="runnerlist"/>
+</div>
 </template>
 
 <script>
@@ -35,6 +34,9 @@ export default {
 </script>
 
 <style scoped>
+/* #runnerlist {
+  align-self: auto;
+} */
 span {
   font-weight: 400;
 }
