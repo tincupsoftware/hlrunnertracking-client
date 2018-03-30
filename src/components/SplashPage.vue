@@ -62,14 +62,18 @@ export default {
   width: 100vw;
   padding: 0;
 }
-
+img#logo {
+  width: 100%;
+}
 h1,
 h2 {
   background-color: #A97C54;
   color: #3F4040;
   width: 100vw;
-  height: 38vh;
+  height: 50vh;
+  margin-bottom: 25px;
   padding-top: 10%;
+  /* padding-bottom: 5%; */
   text-align: center;
   font-weight: normal;
   font-family: 'Lato', sans-serif;
