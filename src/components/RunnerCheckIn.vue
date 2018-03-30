@@ -44,18 +44,22 @@
       v-model="medication"
       placeholder="None"
     ></v-text-field>
-    <v-btn
-      @click="addNewRunner"
-      :disabled="!valid"
-    >
-      submit
-    </v-btn>
-    <v-btn @click="clear">clear</v-btn>
+    <div class="text-xs-center roster-link">
+        <v-btn  @click="addNewRunner"
+                :disabled="!valid"
+                round color="secondary"
+                class="btn-roster"
+                large dark>
+          Submit
+        </v-btn>
+        <v-btn @click="clear" round color="secondary" class="btn-roster" large dark>
+          Clear
+        </v-btn>
+    </div>
   </v-form>
   <p id="submissionconfirmation" v-model="submissionText">{{submissionText}}</p>
   </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -73,7 +77,7 @@ export default {
     locationStaying: '',
     shoeBath: '',
     medicalCondition: '',
-    medication: ''
+    medication: '',
     sex: [],
     size: []
   }),

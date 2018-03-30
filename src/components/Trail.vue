@@ -5,21 +5,26 @@
         <div class="text-xs-center trail-link">
           <router-link class="nav-link-trail" :to="{ name: 'Access'}">
             <v-btn round color="secondary" class="btn-trail" large dark>
-              RETURN
+              BACK
             </v-btn>
           </router-link>
             <v-btn round color="secondary" class="btn-trail" large dark>
               add
             </v-btn>
         </div>
+        <RunnerList/>
       </v-layout>
     </v-container>
 </template>
 
 <script>
+import RunnerList from '@/components/RunnerList'
 export default {
   name: 'Trail',
-  data () {
+  components: { 
+    RunnerList 
+    },
+    data () {
     return {
       title: 'LONESOME',
       title_span1: 'HIGH',

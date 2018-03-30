@@ -10,12 +10,12 @@
           </router-link>
           <router-link class="nav-link" :to="{ name: 'Trail'}">
             <v-btn round color="green" large dark>
-              Trail Runners
+              Runner Tracking List
             </v-btn>
           </router-link>
           <router-link class="nav-link" :to="{ name: 'AidStation'}">
             <v-btn round color="taupe" large dark>
-              Aid-Station
+              Aid Station Form
             </v-btn>
           </router-link>
         </div>

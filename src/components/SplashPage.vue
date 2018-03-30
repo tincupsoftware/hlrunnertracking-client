@@ -8,12 +8,13 @@
     </div>
     <div class="lower-wrap">
       <h1>{{ title_h1 }}</h1>
+      <h2>{{ title_h2 }}</h2>
     </div>
   </v-layout>
   <div class="text-xs-center home-link">
     <router-link class="nav-link-home" :to="{ name: 'Access'}">
       <v-btn round color="secondary" class="btn-home" large dark>
-        ACCESS
+        ENTER
       </v-btn>
     </router-link>
   </div>
@@ -28,7 +29,8 @@ export default {
       title: 'LONESOME',
       title_span1: 'HIGH',
       title_span2: '100',
-      title_h1: 'High Lonesome 100'
+      title_h1: 'High Lonesome 100',
+      title_h2: 'Runner Management System'
     }
   },
   mounted () {
@@ -65,19 +67,21 @@ export default {
 img#logo {
   width: 100%;
 }
-h1,
+h1 {
+    margin-top: 2vh;
+    font-size: 4rem;
+}
 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2vh;
+}
+h1, h2 {
   background-color: #A97C54;
   color: #3F4040;
   width: 100vw;
-  height: 50vh;
-  margin-bottom: 25px;
-  padding-top: 10%;
-  /* padding-bottom: 5%; */
   text-align: center;
   font-weight: normal;
   font-family: 'Lato', sans-serif;
-  font-size: 5rem;
 }
 .nav-link-home .btn-home {
   color: #A97C54;

@@ -1,14 +1,9 @@
 <template>
-<!-- <div class="access"> -->
 <v-container class="roster">
   <div class="page-header">
     <h1 align-center><span>{{title_span1}}</span> {{title}} <span>{{title_span2}}</span></h1>
   </div>
   <v-layout column align-center class="logo">
-    <!-- <v-toolbar>
-      <h1><span>{{title_span1}}</span> {{title}} <span>{{title_span2}}</span></h1>
-
-    </v-toolbar> -->
     <v-card color="taupe">
       <v-card-title>
         Nutrition
@@ -40,7 +35,7 @@
     </div>
   </v-layout>
 </v-container>
-<!-- </div> -->
+
 </template>
 
 <script>
