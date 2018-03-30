@@ -1,7 +1,8 @@
 <template>
 <div id="runnercheckinwrapper">
-<div id="runnercheckin">
-  <v-form id="runnercheckinform" v-model="valid" ref="form" lazy-validation>
+  <div id="runnercheckin">
+    <h1>Add Runner to Roster</h1>
+    <v-form id="runnercheckinform" v-model="valid" ref="form" lazy-validation>
     <v-text-field
       label="Bib #"
       v-model="bibNumber"
@@ -54,7 +55,9 @@
   <p id="submissionconfirmation" v-model="submissionText">{{submissionText}}</p>
   </div>
   </div>
+</div>
 </template>
+
 <script>
 export default {
   name: 'RunnerCheckIn',
@@ -70,7 +73,7 @@ export default {
     locationStaying: '',
     shoeBath: '',
     medicalCondition: '',
-    medication: '',
+    medication: ''
     sex: [],
     size: []
   }),
@@ -88,50 +91,61 @@ export default {
           locationStaying: this.locationStaying,
           shoeBath: this.shoeBath,
           medicalCondition: this.medicalCondition,
-          medication: this.medication,
+          medication: this.medication
         })
       })
-        .then(response => response.json())
-        .then(() => this.confirmSubmission())
-        .then(() => this.clear())
-        .then(() => {
-          setTimeout(() => {
-            this.$router.push({ name: 'RunnerCheckIn' })
-          }, 1500)
-        })
-        .catch(err => console.log('Request failed', err))
+      .then(response => response.json())
+      .then(() => this.confirmSubmission())
+      .then(() => this.clear())
+      .then(() => {
+        setTimeout(() => {
+          this.$router.push({
+            name: 'RunnerCheckIn'
+          })
+        }, 1500)
+      })
+      .catch(err => console.log('Request failed', err))
     },
     clear () {
       this.$refs.form.reset()
     },
     confirmSubmission () {
-        this.submissionText = 'Submission successful!'
-         setTimeout(() => {
-            this.submissionText = ''
-          }, 1500)
+      this.submissionText = 'Submission successful!'
+      setTimeout(() => {
+        this.submissionText = ''
+      }, 1500)
     }
   }
 }
-
 </script>
+
 <style scoped>
+h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+#runnercheckinform {
+  margin-top: 5%;
+  padding: 5% 10%;
+  color: white;
+  background-color: #CBA37F;
+}
+
 #runnercheckinwrapper {
   display: flex;
   justify-content: center;
-    background-color: #3F4040
 }
+
 #runnercheckin {
+  width: 80vw;
   align-self: center;
-  margin: 2vh;
-  padding: 2vh;
-  align-self: center;
-  width: 60vw;
-  background-color: white;
 }
+
 #runnercheckinform {
   justify-content: space-around;
-  width: 50vw;
+  width: 80vw;
 }
+
 #submissionconfirmation {
   margin: 1vh;
   font-family: 'Roboto', sans-serif;
