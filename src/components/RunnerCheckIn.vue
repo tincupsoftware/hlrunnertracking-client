@@ -11,13 +11,13 @@
       label="Name"
       v-model="name"
     ></v-text-field>
-     <v-container fluid>
+     <v-container class="radio-btn" fluid>
        <h4>Shirt Size</h4>
        <v-radio-group v-model="sex" row>
       <v-radio label="Men's" value="Men's" ></v-radio>
       <v-radio label="Women's" value="Women's"></v-radio>
     </v-radio-group>
-           <v-radio-group v-model="size" row>
+    <v-radio-group v-model="size" row>
       <v-radio label="XS" value="X-Small" ></v-radio>
        <v-radio label="S" value="Small" ></v-radio>
         <v-radio label="M" value="Medium" ></v-radio>
@@ -45,6 +45,7 @@
       placeholder="None"
     ></v-text-field>
     <div class="text-xs-center roster-link">
+      <p id="submissionconfirmation" v-model="submissionText">{{submissionText}}</p>
         <v-btn  @click="addNewRunner"
                 :disabled="!valid"
                 round color="secondary"
@@ -57,7 +58,6 @@
         </v-btn>
     </div>
   </v-form>
-  <p id="submissionconfirmation" v-model="submissionText">{{submissionText}}</p>
   </div>
   </div>
 </template>
@@ -152,8 +152,14 @@ h1 {
 
 #submissionconfirmation {
   margin: 1vh;
+  width: 100%;
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   font-weight: 300;
+  background-color: green;
+}
+.radio-btn {
+  color: #525050;
+  padding: 0;
 }
 </style>

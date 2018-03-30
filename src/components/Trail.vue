@@ -22,10 +22,10 @@
 import RunnerList from '@/components/RunnerList'
 export default {
   name: 'Trail',
-  components: { 
-    RunnerList 
-    },
-    data () {
+  components: {
+    RunnerList
+  },
+  data () {
     return {
       title: 'LONESOME',
       title_span1: 'HIGH',
@@ -42,15 +42,18 @@ export default {
 span {
   font-weight: 400;
 }
+
 .btn {
   font-size: 2rem;
   height: 5rem;
   width: 25rem;
 }
+
 .nav-link {
   color: #303131;
   text-decoration: none;
 }
+
 .nav-link-trail .btn-trail {
   color: #A97C54;
   font-size: 2rem;
@@ -58,6 +61,7 @@ span {
   width: 10rem;
   margin-bottom: 25px;
 }
+
 .nav-link-trail {
   text-decoration: none;
 }
