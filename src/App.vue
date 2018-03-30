@@ -6,7 +6,7 @@
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
       <v-btn flat :to="{name: 'RunnerCheckIn'}">Runner Checkin</v-btn>
-      <v-btn flat>Runner List</v-btn>
+      <v-btn flat :to="{name: 'RunnerList' }">Runner List</v-btn>
       <v-btn flat>Aid Station Input</v-btn>
     </v-toolbar-items>
   </v-toolbar>
@@ -27,21 +27,7 @@ export default {
   name: 'App',
   data () {
     return {
-      fixed: false,
-      apiUrl: 'https://hl100-runnertracking.herokuapp.com/runners',
-      runners: []
-    }
-  },
-  mounted () {
-    this.getDataFromDatabase()
-  },
-  methods: {
-    getDataFromDatabase () {
-      fetch(this.apiUrl)
-        .then(response => response.json())
-        .then(response => {
-          this.runners = response
-        })
+      fixed: false
     }
   }
 }
