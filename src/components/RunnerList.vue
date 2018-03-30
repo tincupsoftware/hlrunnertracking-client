@@ -7,8 +7,8 @@
   >
     <template slot="items" slot-scope="props">
       <td>{{ props.item.name }}</td>
-      <td class="text-xs-right">{{ props.item.bibNumber }}</td>
-      <td class="text-xs-right">{{ props.item.Started }}</td>
+      <td class="text-xs-center">{{ props.item.bibNumber }}</td>
+      <td class="text-xs-center">{{ props.item.Started }}</td>
       <td class="text-xs-center">{{ props.item.RasberryOneIn}}</td>
       <td class="text-xs-center">{{ props.item.RasberryOneOut}}</td>
       <td class="text-xs-center">{{ props.item.AnteroIn}}</td>
@@ -84,6 +84,8 @@
           { text: 'Hancock Pacer Out',  align: 'center', value: 'HancockPacerOut' },
           { text: 'Lost Wonder In',  align: 'center', value: 'LostWonderIn' },
           { text: 'Lost Wonder Out',  align: 'center', value: 'LostWonderOut' },
+           { text: 'Lost Wonder Pacer In',  align: 'center', value: 'LostWonderPacerIn' },
+          { text: 'Lost Wonder Pacer Out',  align: 'center', value: 'LostWonderPacerOut' },
           { text: 'Purgatory Time In', align: 'center',  value: 'PurgatoryIn' },
           { text: 'Purgatory Time Out', align: 'center',  value: 'PurgatoryOut' },
           { text: 'Purgatory Pacer In', align: 'center',  value: 'PurgatoryPacerIn' },

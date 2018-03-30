@@ -6,7 +6,7 @@
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
       <v-btn flat :to="{name: 'RunnerCheckIn'}">Runner Checkin</v-btn>
-      <v-btn flat router-link to="{name: 'RunnerList' }">Runner List</v-btn>
+      <v-btn flat :to="{name: 'RunnerList' }">Runner List</v-btn>
       <v-btn flat>Aid Station Input</v-btn>
     </v-toolbar-items>
   </v-toolbar>
