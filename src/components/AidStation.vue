@@ -8,7 +8,7 @@
         <div class="text-xs-center aid-link">
           <router-link class="nav-link-aid" :to="{ name: 'Access'}">
             <v-btn round color="secondary" class="btn-aid" large dark>
-              RETURN
+              Back
             </v-btn>
           </router-link>
         </div>
