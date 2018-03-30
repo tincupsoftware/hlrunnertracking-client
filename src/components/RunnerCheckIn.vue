@@ -73,7 +73,7 @@ export default {
     locationStaying: '',
     shoeBath: '',
     medicalCondition: '',
-    medication: ''
+    medication: '',
     sex: [],
     size: []
   }),
