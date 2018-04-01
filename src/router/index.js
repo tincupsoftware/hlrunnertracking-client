@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import SplashPage from '@/components/SplashPage'
-import RunnerCheckIn from '@/components/RunnerCheckIn'
+import AddNewRunner from '@/components/AddNewRunner'
 import Access from '@/components/Access'
 import Roster from '@/components/Roster'
 import Trail from '@/components/Trail'
 import AidStation from '@/components/AidStation'
 import RunnerList from '@/components/RunnerList'
+import RunnerCheckIn from '@/components/RunnerCheckIn'
 
 Vue.use(Router)
 
@@ -17,6 +18,11 @@ export default new Router({
       path: '/',
       name: 'SplashPage',
       component: SplashPage
+    },
+    {
+      path: '/addnewrunner',
+      name: 'AddNewRunner',
+      component: AddNewRunner
     },
     {
       path: '/runnercheckin',

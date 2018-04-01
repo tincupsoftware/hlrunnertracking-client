@@ -10,12 +10,14 @@
         <v-spacer></v-spacer>
         <v-text-field append-icon="search" label="Search" single-line hide-details v-model="search"></v-text-field>
       </v-card-title>
-      <v-data-table :headers="headers" :items="runners" :search="search">
-        <template slot="items" slot-scope="props" color="secondary">
-        <td>{{ props.item.bibNumber }}</td>
+      <v-data-table :headers="headers" :items="runners" :search="search" item-key="bibNumber">
+        <template slot="items" slot-scope="props" color="secondary" router-link :to="{name: 'RunnerCheckIn'}">
+        <tr :runner="runner">
+        <td>{{ props.item.id}}</td>
         <td class="text-xs-left">{{ props.item.name }}</td>
         <td class="text-xs-left">{{ props.item.shoeBath }}</td>
         <td class="text-xs-left">{{ props.item.shirtSize }}</td>
+         </tr>
       </template>
         <v-alert slot="no-results" :value="true" color="error" v-icon="warning">
           Your search for "{{ search }}" found no results.
@@ -28,7 +30,7 @@
           Back
         </v-btn>
       </router-link>
-      <router-link class="nav-link-roster" :to="{ name: 'RunnerCheckIn'}">
+      <router-link class="nav-link-roster" :to="{ name: 'AddNewRunner'}">
         <v-btn round color="secondary" class="btn-roster" large dark>
           add
         </v-btn>

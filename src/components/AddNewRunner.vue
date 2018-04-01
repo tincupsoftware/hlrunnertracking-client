@@ -1,7 +1,7 @@
 <template>
 <div id="runnercheckinwrapper">
   <div id="runnercheckin">
-    <h1>Runner Check-in Form</h1>
+    <h1>Add Runner to Roster</h1>
     <v-form id="runnercheckinform" v-model="valid" ref="form" lazy-validation>
     <v-text-field
       label="Bib #"
@@ -69,7 +69,7 @@
 
 <script>
 export default {
-  name: 'RunnerCheckIn',
+  name: 'AddNewRunner',
   data: () => ({
     apiUrl: 'https://hl100-runnertracking.herokuapp.com/api/beta/runners/',
     valid: true,
@@ -92,7 +92,7 @@ export default {
         headers: new Headers({
           'Content-Type': 'application/json'
         }),
-        method: 'PUT',
+        method: 'POST',
         body: JSON.stringify({
           bibNumber: this.bibNumber,
           name: this.name,
