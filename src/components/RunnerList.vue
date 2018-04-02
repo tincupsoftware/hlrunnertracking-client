@@ -8,7 +8,6 @@
     <template slot="items" slot-scope="props">
       <td>{{ props.item.name }}</td>
       <td class="text-xs-center">{{ props.item.id }}</td>
-      <td class="text-xs-center">{{ props.item.Started }}</td>
       <td class="text-xs-center">{{ props.item.RasberryOneIn}}</td>
       <td class="text-xs-center">{{ props.item.RasberryOneOut}}</td>
       <td class="text-xs-center">{{ props.item.AnteroIn}}</td>
