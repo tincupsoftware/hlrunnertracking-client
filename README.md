@@ -2,6 +2,10 @@
 
 > A Vue.js project
 
+> [Link to project](https://highlonesome100runnertracking.firebaseapp.com/#/)
+
+> [Link to Wiki]()
+
 ## Build Setup
 
 ``` bash
