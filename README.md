@@ -4,7 +4,7 @@
 
 > [Link to project](https://highlonesome100runnertracking.firebaseapp.com/#/)
 
-> [Link to Wiki]()
+> [Link to Wiki](https://github.com/HL-100/HL100_Wiki/wiki)
 
 ## Build Setup
 
