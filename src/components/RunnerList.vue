@@ -65,7 +65,6 @@
             value: 'name'
           },
           { text: 'Bib Number', align: 'center', value: 'bibNumber' },
-          { text: 'Started', align: 'center', value: 'Started' },
           { text: 'Rasberry Time In', align: 'center', value: 'RasberryOneIn' },
           { text: 'Rasberry Time Out', align: 'center',  value: 'RasberryOneOut' },
           { text: 'Antero Time In', align: 'center',  value: 'AnteroIn' },
