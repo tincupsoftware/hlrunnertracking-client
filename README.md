@@ -59,17 +59,17 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ## Author
 #### Tin Cup Software
 * Brandon Johnson
-  * [GitHub](https://github.com/bmj1985){:target="_blank"}
-  * [LinkedIn](www.linkedin.com/in/bmj1985/){:target="_blank"}
+  * [GitHub](https://github.com/bmj1985)
+  * [LinkedIn](www.linkedin.com/in/bmj1985/)
 * Charles Ballew
-  * [GitHub](https://github.com/cwbjr){:target="_blank"}
-  * [LinkedIn](www.linkedin.com/in/cwb-jr){:target="_blank"}
+  * [GitHub](https://github.com/cwbjr)
+  * [LinkedIn](www.linkedin.com/in/cwb-jr)
 * Jordan Smith
-  * [GitHub](https://github.com/techjems17){:target="_blank"}
-  * [LinkedIn](www.linkedin.com/in/techjems17){:target="_blank"}
+  * [GitHub](https://github.com/techjems17)
+  * [LinkedIn](www.linkedin.com/in/techjems17)
 * Tyler Mustard
-  * [GitHub](https://github.com/TMustard){:target="_blank"}
-  * [LinkedIn](www.linkedin.com/in/tylermustard){:target="_blank"}
+  * [GitHub](https://github.com/TMustard)
+  * [LinkedIn](www.linkedin.com/in/tylermustard)
 
 ## License
 MIT
