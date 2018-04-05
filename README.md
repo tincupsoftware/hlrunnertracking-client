@@ -1,10 +1,19 @@
-# hl100runnertracking-client
+# High Lonesome 100 Runner Management System
+An app for internal race management of the High Lonesome 100.
 
-> A Vue.js project
+[Deployed Frontend Link](https://highlonesome100runnertracking.firebaseapp.com/#/)<br>
+[Deployed Backend Link](https://coloradohutfinder.herokuapp.com/api/v1/)<br>
+[Server-side Repo](https://github.com/bmj1985/ColoradoHutandYurtFinder-server)<br>
+[Wiki](https://github.com/HL-100/HL100_Wiki/wiki)<br>
+[Trello Board](https://trello.com/b/J917ZQZf/colorado-hut-and-yurt-finder)<br>
 
-> [Link to project](https://highlonesome100runnertracking.firebaseapp.com/#/)
+## App Description
 
-> [Link to Wiki](https://github.com/HL-100/HL100_Wiki/wiki)
+
+## Problem Statement
+
+
+## User Experience
 
 ## Build Setup
 
@@ -29,3 +38,20 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Technologies
+* Front-end: Vuejs, Vuetify
+* Back-end: Node, Express, Knex, PostgresQL, Twilio
+
+## Author
+#### Tin Cup Software
+Brandon Johnson
+[GitHub](https://github.com/bmj1985)
+[LinkedIn](www.linkedin.com/in/bmj1985/)
+Charles Ballew
+Jordan Smith
+Tyler Mustard
+
+## License
+MIT
+
