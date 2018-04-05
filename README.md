@@ -59,6 +59,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ## Author
 #### Tin Cup Software
 * Brandon Johnson
+  * <a href="https://github.com/bmj1985" target="_blank">Github</a>
   * [GitHub](https://github.com/bmj1985)
   * [LinkedIn](www.linkedin.com/in/bmj1985/)
 * Charles Ballew
