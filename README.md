@@ -2,10 +2,10 @@
 An app for internal race management of the High Lonesome 100.
 
 [Deployed Frontend Link](https://highlonesome100runnertracking.firebaseapp.com/#/)<br>
-[Deployed Backend Link](https://coloradohutfinder.herokuapp.com/api/v1/)<br>
-[Server-side Repo](https://github.com/bmj1985/ColoradoHutandYurtFinder-server)<br>
+[Deployed Backend Link](https://hl100-runnertracking.herokuapp.com/api/beta/)<br>
+[Server-side Repo](https://github.com/HL-100/hl100runnertracking-server)<br>
 [Wiki](https://github.com/HL-100/HL100_Wiki/wiki)<br>
-[Trello Board](https://trello.com/b/J917ZQZf/colorado-hut-and-yurt-finder)<br>
+[Trello Board](https://trello.com/b/KdxenP6I/high-lonesome-100-runner-tracking)<br>
 
 ## App Description
 
