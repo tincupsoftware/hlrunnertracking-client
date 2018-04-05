@@ -11,12 +11,12 @@ High Lonesome 100 holds a one-hundred-mile trail race in Colorado every year.  T
 
 ## App Description
 <div>
-<img src="./Screenshots/1.png" width="10vw">
-<img src="./Screenshots/2.png" width="10vw">
-<img src="./Screenshots/3.png" width="10vw">
-<img src="./Screenshots/4.png" width="10vw">
-<img src="./Screenshots/5.png" width="10vw">
-<img src="./Screenshots/6.png" width="10vw">
+<img src="./Screenshots/1.png" height="100" width="100" align="left">
+<img src="./Screenshots/2.png" height="100" width="100" align="center">
+<img src="./Screenshots/3.png" height="100" width="100" align="right">
+<img src="./Screenshots/4.png" height="100" width="100" align="left">
+<img src="./Screenshots/5.png" height="100" width="100" align="center">
+<img src="./Screenshots/6.png" height="100" width="100" align="right">
 </div>
 
 
