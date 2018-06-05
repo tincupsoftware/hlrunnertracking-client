@@ -53,11 +53,10 @@
 <script>
   export default {
     name: 'RunnerList',
-    props: ['runners'],
     data () {
       return {
-      apiUrl: 'https://hl100-runnertracking.herokuapp.com/api/beta/runners/',
       runners: [],
+      apiUrl: 'https://hl100-runnertracking.herokuapp.com/api/beta/runners/',
       headers: [
           {
             text: 'Name',
@@ -120,7 +119,7 @@
           this.runners = response
         })
     }
-  }
+  },
   }
 </script>
 <style scoped>
