@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import LandingPage from '@/components/LandingPage'
+import LandingPage from '@/views/LandingPage'
 import RunnerCheckIn from '@/components/RunnerCheckIn'
-import Access from '@/components/Access'
+import Access from '@/views/Access'
 import Roster from '@/components/Roster'
-import Trail from '@/components/Trail'
-import AidStation from '@/components/AidStation'
+import RunnerTrackingConsole from '@/views/RunnerTrackingConsole'
+import AidStation from '@/views/AidStation'
 import RunnerList from '@/components/RunnerList'
 
 Vue.use(Router)
@@ -34,14 +34,9 @@ export default new Router({
       component: Roster
     },
     {
-      path: '/runnerlist',
-      name: 'RunnerList',
-      component: RunnerList
-    },
-    {
-      path: '/trail',
-      name: 'Trail',
-      component: Trail
+      path: '/runnertrackingconsole',
+      name: 'RunnerTrackingConsole',
+      component: RunnerTrackingConsole
     },
     {
       path: '/aid-station',
