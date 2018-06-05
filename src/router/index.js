@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import SplashPage from '@/components/SplashPage'
+import LandingPage from '@/components/LandingPage'
 import RunnerCheckIn from '@/components/RunnerCheckIn'
 import Access from '@/components/Access'
 import Roster from '@/components/Roster'
@@ -15,8 +15,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'SplashPage',
-      component: SplashPage
+      name: 'LandingPage',
+      component: LandingPage
     },
     {
       path: '/runnercheckin',
