@@ -21,7 +21,7 @@
 <script>
 import RunnerList from '@/components/RunnerList'
 export default {
-  name: 'Trail',
+  name: 'RunnerTrackingConsole',
   components: {
     RunnerList
   },

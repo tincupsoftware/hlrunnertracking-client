@@ -8,7 +8,7 @@
               Roster
             </v-btn>
           </router-link>
-          <router-link class="nav-link" :to="{ name: 'Trail'}">
+          <router-link class="nav-link" :to="{ name: 'RunnerTrackingConsole'}">
             <v-btn round color="green" large dark>
               Runner Tracking List
             </v-btn>
@@ -20,7 +20,7 @@
           </router-link>
         </div>
         <div class="text-xs-center home-link">
-          <router-link class="nav-link-home" :to="{ name: 'SplashPage'}">
+          <router-link class="nav-link-home" :to="{ name: 'LandingPage'}">
             <v-btn round color="secondary" class="btn-home" large dark>
               Home
             </v-btn>
