@@ -51,12 +51,11 @@
   </v-data-table>
 </template>
 <script>
-  export default {
+import { mapActions } from 'vuex'
+export default {
     name: 'RunnerList',
     data () {
       return {
-      runners: [],
-      apiUrl: 'https://hl100-runnertracking.herokuapp.com/api/beta/runners/',
       headers: [
           {
             text: 'Name',
@@ -108,19 +107,15 @@
         ],
       }
     },
-    mounted () {
-    this.getDataFromDatabase()
-  },
-  methods: {
-    getDataFromDatabase () {
-      fetch(this.apiUrl)
-        .then(response => response.json())
-        .then(response => {
-          this.runners = response
-        })
+  created () {
+        this.$store.dispatch("listRunners")
+    },
+  computed: {
+        runners (){
+            return this.$store.state.runners
+        }
     }
-  },
-  }
+}
 </script>
 <style scoped>
 </style>
